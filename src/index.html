@@ -3,11 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <header><h1 class="bg-slate-400">Weather Applications</h1></header>
-    <script src="main.js"></script>
+<body class="flex items-center justify-center h-screen bg-gray-100"> 
+
+<div class="container w-fit h-fit flex items-center justify-center flex-col gap-10 m-auto mt-5 rounded-xl p-7 bg-slate-300">
+    <header><h1 class="text-black text-center text-2xl font-doto m-auto">Weather Applications</h1></header>
+
+     <section>
+        <div class="w-fit h-fit bg-blue-200 m-auto flex justify-between items-center gap-4">
+            <input type="text" class="location-input border rounded-full bg-blue-200 m-auto w-full placeholder:text-black" placeholder="Enter Locations">
+            <button class="location-search border rounded-full bg-blue-200 m-auto">S</button>
+            <button class="location-current border rounded-full bg-blue-200 m-auto">C</button>
+        </div>
+
+        <div class="location-error w-fit h-fit bg-blue-200 m-auto flex justify-between items-center flex-col p-1">
+            <h1>Location not found!!!</h1>
+            <img src="/assets/404.png" alt="404 Error" class="w-20 h-20">
+        </div>
+
+        <div class="weather-body weather-box flex justify-center items-center flex-col">
+            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img w-10 h-10">
+
+            <div class="weather-box flex justify-center items-center flex-col">
+                <p class="temperature" id="temp">0 <sup>°C</sup></p>
+                <p class="description" id="description">light rain</p>
+            </div>
+
+            <div class="weather-boxs flex flex-row justify-evenly items-center gap-4 w-full h-fit border border-black">
+                    <div class="hum-card">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="wind-card">
+                        <span id="windspeed">12Km/H</span>
+                        <p>Wind Speed</p>
+                </div>
+            </div>
+
+            
+            </div>
+
+            <div class="dropdown border border-black m-auto pt-4 text-right">#
+
+                <div class="dropdown-func ">
+                    <div class="flex flex-row justify-between items-center w-full h-fit gap-4">
+                        <div>
+                            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img w-10 h-10">
+                            <p>temp.</p>
+                            <p>temp.</p>
+                            <p>temp.</p>
+                            <p>temp.</p>
+                        </div>
+                        <div>
+                            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img w-10 h-10">
+                        </div>
+                        <div>
+                            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img w-10 h-10">
+                        </div>
+                        <div>
+                            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img w-10 h-10">
+                        </div>
+                        <div>
+                            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img w-10 h-10">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+     </section>
+</div>
+
+
+<script src="main.js"></script>
 </body>
 </html>
