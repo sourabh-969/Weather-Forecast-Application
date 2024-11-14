@@ -2,7 +2,7 @@ const url = 'https://weather-api138.p.rapidapi.com/weather?city_name=delhi';
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '149add6c06mshff11fe9f53d87b7p191295jsn1df62a165a82',
+		'x-rapidapi-key': '149add6c06mshff11fe9f53d87b7p191295jsn1df62a165a82k9',
 		'x-rapidapi-host': 'weather-api138.p.rapidapi.com'
 	}
 };
